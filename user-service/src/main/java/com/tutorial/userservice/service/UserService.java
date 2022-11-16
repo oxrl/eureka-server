@@ -72,12 +72,12 @@ public class UserService {
         }
         result.put("User", user);
         List<Car> cars = carFeignClient.getCars(userId);
-        if(cars.isEmpty())
+        if(cars == null || cars.isEmpty())
             result.put("Cars", "ese user no tiene coches");
         else
             result.put("Cars", cars);
         List<Bike> bikes = bikeFeignClient.getBikes(userId);
-        if(bikes.isEmpty())
+        if(bikes == null || bikes.isEmpty() )
             result.put("Bikes", "ese user no tiene motos");
         else
             result.put("Bikes", bikes);
