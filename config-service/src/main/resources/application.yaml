@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          default-label: multiples-instancias
+          default-label: gateway
           uri: https://github.com/oxrl/eureka-server
           search-paths: config-data
   application:
