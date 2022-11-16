@@ -6,7 +6,7 @@ spring:
       server:
         git:
           default-label: multiples-instancias
-          uri: https://github.com/cavanosa/microservices-tutorial
+          uri: https://github.com/oxrl/eureka-server
           search-paths: config-data
   application:
     name: config-service
